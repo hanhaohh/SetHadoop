@@ -55,6 +55,57 @@ exit vim and then source the .bash_profile to make the config work
 ```
 source ~/.bash_profile
 ```
+Create folders that hadoop could save data to.
+```
+mkdir ~/hadoop_data
+mkdir ~/hadoop_data/tmp
+mkdir  ~/hadoop_data/tmp/
+mkdir ~/hadoop_data/tmp/dfs/
+mkdir ~/hadoop_data/tmp/dfs/data
+mkdir ~/hadoop_data/tmp/dfs/name
+```
+
+
+There are 2 files need to be changed:
+
+  -  core-site.xml
+```
+vim /usr/local/hadoop/etc/hadoop/core-site.xml
+```
+and then add:
+```
+<configuration>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>file:/home/hadoop/hadoop_data/tmp</value>
+        <description>Abase for other temporary directories.</description>
+    </property>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://localhost:9000</value>
+    </property>
+</configuration>
+```
+  -  hdfs-site.xml
+```
+<configuration>
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:/home/hadoop/hadoop_data/tmp/dfs/name</value>
+    </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:/home/hadoop/hadoop_data/tmp/dfs/data</value>
+    </property>
+</configuration>
+
+```
+
+
 
 
 [pip]:<https://bootstrap.pypa.io/get-pip.py>
