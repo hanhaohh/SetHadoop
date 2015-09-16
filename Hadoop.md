@@ -110,6 +110,10 @@ Format our hdfs system:
 ```
 hadoop namenode -format
 ```
+if nothing goes crazy, you are good to go, to start your single node cluster:
+```
+start-dfs.sh
+```
 
 
 [pip]:<https://bootstrap.pypa.io/get-pip.py>
