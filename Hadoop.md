@@ -1,3 +1,3 @@
 #HADOOP Setup
 
-###Get JAVA 
+###1.Get JAVA 
