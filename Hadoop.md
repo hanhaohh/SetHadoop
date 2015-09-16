@@ -45,11 +45,12 @@ mv /home/hadoop/Documents/hadoop-2.6.0-src /home/hadoop/Documents/hadoop
 ####5.Config the Hadoop
 Since Hadoop running on java, so we will set the JAVA_HOME.
 ```
-vim ~/.bash_profile
+vim ~/.bashrc
 ```
 and then add
 ```
-export JAVA_HOME=/usr/lib/jvm/default-java/bin
+export PATH=$PATH:/home/hadoop/Documents/hadoop/bin:/home/hadoop/Documents/hadoop/sbin
+export JAVA_HOME=/usr/lib/jvm/default-java
 ```
 exit vim and then source the .bash_profile to make the config work
 ```
@@ -102,10 +103,13 @@ and then add:
         <value>file:/home/hadoop/hadoop_data/tmp/dfs/data</value>
     </property>
 </configuration>
-
 ```
 
-
+#### Get Started
+Format our hdfs system:
+```
+hadoop namenode -format
+```
 
 
 [pip]:<https://bootstrap.pypa.io/get-pip.py>
