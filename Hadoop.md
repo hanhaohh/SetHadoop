@@ -20,9 +20,18 @@ sudo pip install yourpackagename
 ssh must be installed and sshd must be running to use the Hadoop scripts that manage remote Hadoop daemons. 
 To install SSH and rsync on Linux:
 ```
+sudo apt-get install openssh-server
 sudo apt-get install ssh
 sudo apt-get install rsync
 ```
+For nodes of cluster to communicate without password,we set up ssh. 
+```
+cd ~/.ssh/                     
+ssh-keygen -t rsa   //create the public key and private key for this node 
+cat id_rsa.pub >> authorized_keys   //add my public key to my authorized users list, it means this node allow itself to login
+```
+
+
 ####4.Get Hadoop
 We will use Apache Hadoop 2.6.0 for this time   .
 Download the [Hadoop] and the extract to the home folder 
@@ -33,6 +42,21 @@ and then rename it:
 ```
 mv /home/hadoop/Documents/hadoop-2.6.0-src /home/hadoop/Documents/hadoop
 ```
+####5.Config the Hadoop
+Since Hadoop running on java, so we will set the JAVA_HOME.
+```
+vim ~/.bash_profile
+```
+and then add
+```
+export JAVA_HOME=/usr/lib/jvm/default-java/bin
+```
+exit vim and then source the .bash_profile to make the config work
+```
+source ~/.bash_profile
+```
+
 
 [pip]:<https://bootstrap.pypa.io/get-pip.py>
-[hadoop]:<http://apache.arvixe.com/hadoop/common/hadoop-2.6.0/hadoop-2.6.0-src.tar.gz>
+[hadoop]:<http://apache.spinellicreations.com/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz>
+
