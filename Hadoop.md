@@ -2,7 +2,7 @@
 
 #### 1.Get JAVA 
 ```
-sudo apt-get install openjdk-7-jre
+sudo apt-get install openjdk-7-jre,openjdk-7-jdk
 ```
 
 #### 2.Get Python Package
@@ -50,7 +50,7 @@ vim ~/.bashrc
 and then add
 ```
 export PATH=$PATH:/home/hadoop/Documents/hadoop/bin:/home/hadoop/Documents/hadoop/sbin
-export JAVA_HOME=/usr/lib/jvm/default-java
+export JAVA_HOME= /usr/lib/jvm/java-1.7.0-openjdk-amd64
 ```
 exit vim and then source the .bash_profile to make the config work
 ```
