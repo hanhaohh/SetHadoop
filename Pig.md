@@ -15,6 +15,6 @@ cd pig
 ### 3. Test
 test if pig could work on Hadoop HDFS and Mapreduce:
 ```
-
+pig -x mapreduce
 ```
 
