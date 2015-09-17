@@ -6,7 +6,7 @@ sudo apt-get install openjdk-7-jre,openjdk-7-jdk
 ```
 
 #### 2.Get Python Package
-[pip] (Download link) is the most used Python Control package  that could easily handle all of your Python third-party packages.
+[pip]  is the most used Python Control package  that could easily handle all of your Python third-party packages.
  - open terminal in your machine
  - go to the folder has the get-pip.py you just download
 ```
