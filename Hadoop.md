@@ -1,4 +1,5 @@
-# HADOOP Setup On Ubuntu 12.04
+#                      BI&ABootcamp
+## HADOOP Setup On Ubuntu 12.04
 
 #### 1.Get JAVA 
 ```
@@ -71,7 +72,7 @@ There are 2 files need to be changed:
 
   -  core-site.xml
 ```
-vim /usr/local/hadoop/etc/hadoop/core-site.xml
+vim /home/hadoop/Documents/hadoop/etc/hadoop/core-site.xml
 ```
 and then add:
 ```
@@ -114,7 +115,12 @@ if nothing goes crazy, you are good to go, to start your single node cluster:
 ```
 start-dfs.sh
 ```
+You can type ```jps``` to see if the hadoop system is running ok
 
+If you do not see namenode or datanode daemon running, you could run ```stop-all.sh```
+and restart your machine and try ```start-dfs.sh``` again
+
+if it still does not work, please check the previous steps or email me at  <bgutta@stevens.edu> or <hhan2@stevens.edu>.
 
 [pip]:<https://bootstrap.pypa.io/get-pip.py>
 [hadoop]:<http://apache.spinellicreations.com/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz>
