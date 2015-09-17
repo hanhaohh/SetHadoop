@@ -12,3 +12,4 @@ cd pig
 ```
 /bin/pig
 ```
+### 3. Test
