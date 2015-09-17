@@ -28,9 +28,11 @@ cd conf
 ```
 ```
 cp hive-default.xml.template hive-site.xml
+cp hive-env.sh.template  hive-env.sh
+
 vim hive-site.xml
 ```
-Servral changes need to be edited:
+Servral changes need to be edited in ```hive-stie.xml```:
 ```
 line 334: hive.metastore.warehouse.dir is the HDFS directory that hive will store all the data, 
 default is /user/hive/warehouse, I change it to /hive/warehouse
@@ -61,9 +63,9 @@ Create hive folder in HDFS
 ```
 hadoop dfs -mkdir /tmp
 hadoop dfs -mkdir /tmp/hive
-hadoop dfs -mkdir /user/hive/warehouse
+hadoop dfs -mkdir /hive/warehouse
 hadoop dfs -mkdir /tmp/hive
-hadoop dfs -chmod 777 /user/hive/warehouse
+hadoop dfs -chmod 777 /hive/warehouse
 hadoop dfs -chmod 777 /tmp/hive
 ```
 remove *$HADOOP_HOME/share/hadoop/yarn/lib/jline-0.9.94.jar* because there will be a conflication between hive's and hadoop's.
