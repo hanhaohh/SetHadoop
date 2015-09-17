@@ -54,7 +54,7 @@ export JAVA_HOME= /usr/lib/jvm/java-1.7.0-openjdk-amd64
 ```
 exit vim and then source the .bash_profile to make the config work
 ```
-source ~/.bash_profile
+source ~/.bashrc
 ```
 Create folders that hadoop could save data to.
 ```
