@@ -2,7 +2,7 @@
 
 #### 1.Get JAVA 
 ```
-sudo apt-get install default-java
+sudo apt-get install openjdk-7-jre
 ```
 
 #### 2.Get Python Package
