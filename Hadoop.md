@@ -1,12 +1,12 @@
-#HADOOP Setup On Ubuntu 12.04
+# HADOOP Setup On Ubuntu 12.04
 
-####1.Get JAVA 
+#### 1.Get JAVA 
 ```
 sudo apt-get install default-java
 ```
 
-####2.Get Python Package
-[pip](Download link) is the most used Python Control package  that could easily handle all of your Python third-party packages.
+#### 2.Get Python Package
+[pip] (Download link) is the most used Python Control package  that could easily handle all of your Python third-party packages.
  - open terminal in your machine
  - go to the folder has the get-pip.py you just download
 ```
@@ -16,7 +16,7 @@ sudo python install get-pip.py
 ```
 sudo pip install yourpackagename
 ```
-####3.Get SSH
+#### 3.Get SSH
 ssh must be installed and sshd must be running to use the Hadoop scripts that manage remote Hadoop daemons. 
 To install SSH and rsync on Linux:
 ```
@@ -32,7 +32,7 @@ cat id_rsa.pub >> authorized_keys   //add my public key to my authorized users l
 ```
 
 
-####4.Get Hadoop
+#### 4.Get Hadoop
 We will use Apache Hadoop 2.6.0 for this time   .
 Download the [Hadoop] and the extract to the home folder 
 ```
@@ -42,7 +42,7 @@ and then rename it:
 ```
 mv /home/hadoop/Documents/hadoop-2.6.0-src /home/hadoop/Documents/hadoop
 ```
-####5.Config the Hadoop
+#### 5.Config the Hadoop
 Since Hadoop running on java, so we will set the JAVA_HOME.
 ```
 vim ~/.bashrc
