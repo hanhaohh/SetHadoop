@@ -32,7 +32,7 @@ vim hive-site.xml
 ```
 Servral changes need to be edited:
 ```
-line 334: hive.metastore.warehouse.dir is the HDFS directory that hive wil store all the data, 
+line 334: hive.metastore.warehouse.dir is the HDFS directory that hive will store all the data, 
 default is /user/hive/warehouse, I change it to /hive/warehouse
 ```
 next, becuase there is some name conflication in hive-site.xml, we will replace every value of field ${system:java.io.tmpdir} to a directory that we created, for example, let's replace with /home/hadoop/Documents/hive/iotmp
