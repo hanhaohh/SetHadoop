@@ -77,7 +77,7 @@ rm /home/hadoop/Documents/hadoop/share/hadoop/yarn/lib/jline-0.9.94.jar
 # Get Started
 **Hive** is ready to start if nothing goes crazy here:
 ```
-hive
+~/Documents/hive/bin/hive
 ```
 
 
