@@ -42,6 +42,7 @@ Otherwise, you will see problem like the error in following images:
 https://dn-anything-about-doc.qbox.me/userid46108labid766time1427424512161
 
 **Edit conf/hive-env.sh**
+
 Set HADOOP_HOME to point to a specific hadoop install directory
 ```
 HADOOP_HOME=/home/hadoop/Documents/hadoop
