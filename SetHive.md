@@ -62,6 +62,7 @@ mkdir /home/hadoop/Documents/hive_aux
 Create hive folder in HDFS
 ```
 hadoop dfs -mkdir /tmp
+hadoop dfs -mkdir /hive
 hadoop dfs -mkdir /tmp/hive
 hadoop dfs -mkdir /hive/warehouse
 hadoop dfs -mkdir /tmp/hive
