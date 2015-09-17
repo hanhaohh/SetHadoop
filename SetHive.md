@@ -7,7 +7,7 @@ Apache Hive is a data warehouse infrastructure built on top of Hadoop for provid
 #### 1. Get Hive
 Let's go back to the home directory
 ```
-cd ~/Do
+cd ~/Documents
 ```
 The **[Hive 1.2.1]** (Download link) :http://apache.arvixe.com/hive/hive-1.2.1/
 ```
