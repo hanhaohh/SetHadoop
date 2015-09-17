@@ -16,7 +16,7 @@ tar zxvf apache-hive-1.2.1-bin.tar.gz
 mv apache-hive-1.2.1-bin.tar.gz hive 
 ```
 #### 2. Configure Hive
-Let's modify ~/.bashrc to include Hive directory 
+Let's **modify ~/.bashrc** to include Hive directory 
 ```
 export HIVE_HOME=/home/hadoop/Documents/hive
 export PATH=$HIVE_HOME/bin:/home/hadoop/Documents/hadoop/bin:$PATH
@@ -41,6 +41,19 @@ Otherwise, you will see problem like the error in following images:
 
 https://dn-anything-about-doc.qbox.me/userid46108labid766time1427424512161
 
+**Edit conf/hive-env.sh**
+Set HADOOP_HOME to point to a specific hadoop install directory
+```
+HADOOP_HOME=/home/hadoop/Documents/hadoop
+```
+Folder containing extra ibraries required for hive compilation/execution can be controlled by:
+```
+export HIVE_AUX_JARS_PATH=/home/hadoop/Documents/hive_aux
+```
+Create folder hive_aux
+```
+mkdir /home/hadoop/Documents/hive_aux
+```
 **Final step**
 
 Create hive folder in HDFS
