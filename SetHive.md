@@ -50,7 +50,7 @@ Folder containing extra ibraries required for hive compilation/execution can be 
 ```
 export HIVE_AUX_JARS_PATH=/home/hadoop/Documents/hive_aux
 ```
-Create folder hive_aux
+save the change, then create folder hive_aux
 ```
 mkdir /home/hadoop/Documents/hive_aux
 ```
