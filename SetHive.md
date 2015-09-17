@@ -32,12 +32,12 @@ cp hive-env.sh.template  hive-env.sh
 
 vim hive-site.xml
 ```
-Servral changes need to be edited in ```hive-stie.xml```:
+Servral changes need to be edited in ```hive-site.xml```:
 ```
 line 334: hive.metastore.warehouse.dir is the HDFS directory that hive will store all the data, 
 default is /user/hive/warehouse, I change it to /hive/warehouse
 ```
-next, becuase there is some name conflication in hive-site.xml, we will replace every value of field ${system:java.io.tmpdir} to a directory that we created, for example, let's replace with /home/hadoop/Documents/hive/iotmp
+next, becuase there is some name conflication in hive-site.xml, we will replace every value of field ${system:java.io.tmpdir} to a directory that  created, for example, let's replace with /home/hadoop/Documents/hive/iotmp (/home/hadoop/Documents/hive/iotmp is the directory i manually created)
 
 Otherwise, you will see problem like the error in following images:
 
