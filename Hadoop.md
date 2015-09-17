@@ -10,7 +10,7 @@ sudo apt-get install openjdk-7-jre,openjdk-7-jdk
  - open terminal in your machine
  - go to the folder has the get-pip.py you just download
 ```
-sudo python  get-pip.py install
+sudo python get-pip.py 
 ```
  - then pip is installed on your machine, next time if you need to install a package, just run:
 ```
