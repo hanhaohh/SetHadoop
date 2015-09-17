@@ -42,13 +42,23 @@ Otherwise, you will see problem like the error in following images:
 https://dn-anything-about-doc.qbox.me/userid46108labid766time1427424512161
 
 **Final step**
-remove $HADOOP_HOME/share/hadoop/yarn/lib/jline-0.9.94.jar because there will be a conflication between hive's jline-0.9.94.jar.
+
+Create hive folder in HDFS
+```
+hadoop dfs -mkdir /tmp
+hadoop dfs -mkdir /tmp/hive
+hadoop dfs -mkdir /user/hive/warehouse
+hadoop dfs -mkdir /tmp/hive
+hadoop dfs -chmod 777 /user/hive/warehouse
+hadoop dfs -chmod 777 /tmp/hive
+```
+remove *$HADOOP_HOME/share/hadoop/yarn/lib/jline-0.9.94.jar* because there will be a conflication between hive's and hadoop's.
 ```
 rm /home/hadoop/Documents/hadoop/share/hadoop/yarn/lib/jline-0.9.94.jar
 ```
 
-#Get Started
-Hive is ready to start if nothing goes crazy here
+# Get Started
+**Hive** is ready to start if nothing goes crazy here:
 ```
 hive
 ```
