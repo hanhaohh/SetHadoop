@@ -69,7 +69,7 @@ hadoop dfs -mkdir /tmp/hive
 hadoop dfs -chmod 777 /hive/warehouse
 hadoop dfs -chmod 777 /tmp/hive
 ```
-remove *$HADOOP_HOME/share/hadoop/yarn/lib/jline-0.9.94.jar* because there will be a conflication between hive's and hadoop's.
+remove *$HADOOP_HOME/share/hadoop/yarn/lib/jline-0.9.94.jar* because there will be a confliction between hive's and hadoop's.
 ```
 rm /home/hadoop/Documents/hadoop/share/hadoop/yarn/lib/jline-0.9.94.jar
 ```
