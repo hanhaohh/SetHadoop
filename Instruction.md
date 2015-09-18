@@ -5,6 +5,17 @@
     - For Mac OS: https://my.vmware.com/web/vmware/details?downloadGroup=FUS-800&productId=527&rPId=8667
     - For Linux OS: https://my.vmware.com/web/vmware/details?downloadGroup=FUS-800&productId=527&rPId=8667
     
+Choose the right VMware version for you machine and install it.
+
+### Load Hadoop from OVF File
+Here we will just go over the Mac procedure, Windows is  similar.
+1.  Open the VMware folder
+
+
+2.
+
+
+3.
 
 
 
